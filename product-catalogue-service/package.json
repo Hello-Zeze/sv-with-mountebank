@@ -1,5 +1,5 @@
 {
-    "name": "orders-service",
+    "name": "product-catalogue-service",
     "version": "1.0.0",
     "description": "",
     "main": "src/index.js",

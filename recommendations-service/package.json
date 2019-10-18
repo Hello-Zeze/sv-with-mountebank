@@ -1,5 +1,5 @@
 {
-    "name": "orders-service",
+    "name": "recommendations-service",
     "version": "1.0.0",
     "description": "",
     "main": "src/index.js",
