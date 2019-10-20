@@ -1,0 +1,12 @@
+Frontend Scope of Work:
+- Define all the areas & wire up to backing services:
+  + Orders
+  + Products
+  + Recommendations
+  + Shopping-cart
+  + Google Maps, places autocomplete
+- Barebones frontend design to do:
+  + List Products
+  + Recommendations on Product Purchase
+  + MyOrders badge 
+  + Shopping-Cart 

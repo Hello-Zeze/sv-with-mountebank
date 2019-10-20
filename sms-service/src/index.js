@@ -1,6 +1,6 @@
-const DataAccess = require('./dataAccess');
 const Service = require('./service');
 const HttpApi = require('./httpApi');
+const HttpClient = require('./httpClient');
 
 const app = require('express')();
 const http = require('http').Server(app);
@@ -9,8 +9,8 @@ const bodyParser = require('body-parser');
 app.use(bodyParser.json({type: 'application/json'}));
 app.use(bodyParser.urlencoded({extended:true}));
 
-const dataAccess = new DataAccess();
-const service = new Service(dataAccess);
+const httpClient = new HttpClient();
+const service = new Service(httpClient);
 const httpApi = new HttpApi(service);
 
 httpApi.configure(app);
