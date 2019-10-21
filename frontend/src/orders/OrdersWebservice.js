@@ -7,17 +7,17 @@ class OrdersWebservice {
         this.ordersSvc = ApiDirectory.getApiEndpoint('ordersSvc');
     }
 
-    loadOrders(){
+    loadOrders(clientId){
         const payload = {
-            url:`${this.ordersSvc}/`,
+            url:`${this.ordersSvc}/${clientId}`,
             method: 'GET'
         };
         return this._webservice.execute(payload);
     }
 
-    createOrder(data){
+    createOrder(clientId,data){
         const payload = {
-            url:`${this.ordersSvc}/`,
+            url:`${this.ordersSvc}/${clientId}`,
             method: 'POST',
             content: data
         };

@@ -1,5 +1,4 @@
 import React from 'react';
-import { fade, makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
@@ -15,13 +14,19 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 
+import OrdersWidget from '../orders/OrdersWidget';
+import ShoppingCartWidget from '../shopping-cart/ShoppingCartWidget';
+
 export default class MainBar extends React.Component {
     constructor(props){
         super(props);
     }
     render(){
         return(
-            <div id="main-app-bar"></div>
+            <div id="main-app-bar">
+                <OrdersWidget />
+                <ShoppingCartWidget />
+            </div>
         );
     }
 }

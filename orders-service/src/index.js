@@ -15,7 +15,7 @@ const httpApi = new HttpApi(service);
 
 httpApi.configure(app);
 
-const PORT = 3232;
+const PORT = 3000;
 
 http.listen(PORT, ()=>{
     console.log('listening on: %s', PORT);
