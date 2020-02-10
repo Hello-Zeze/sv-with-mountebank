@@ -5,13 +5,12 @@ class HttpApi {
 
     configure(app){
         const self = this;
-        app.get('/shopping-cart/:id', (req,res)=>{self.handleGetAll(self.service, req, res);});
-        app.post('/shopping-cart/:id', (req,res)=>{self.handleCreateOrder(self.service, req, res);});
+        app.get('/shopping-cart', (req,res)=>{self.handleGetItems(self.service, req, res);});
+        app.post('/shopping-cart', (req,res)=>{self.handleAddItem(self.service, req, res);});
     }
 
     handleGetItems(svc,req,res){
-        const cartId = req.params.id;
-        svc.getItems(cartId).then(result=>{
+        svc.getItems().then(result=>{
             res.status(200).send(result);
         }).catch(err=>{
             res.status(500).send(`An error occured retrieving shopping cart. ${err}`);
@@ -19,9 +18,8 @@ class HttpApi {
     }
 
     handleAddItem(svc,req,res){
-        const cartId = req.params.id;
         const item = req.body;
-        svc.addItem(cartId, item).then(result=>{
+        svc.addItem(item).then(result=>{
             res.status(200).send(result);
         }).catch(err=>{
             res.status(500).send(`An error occured item to shopping cart. ${err}`);

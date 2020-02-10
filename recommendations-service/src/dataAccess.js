@@ -1,13 +1,18 @@
-const uuid = require('uuidv4');
 class DataAccess {
-    constructor(){
-
+    constructor(couchbaseClient){
+        this.couchbaseClient = couchbaseClient;
     }
 
-    getById(id){
-        return new Promise((resolve,reject)=>{
-            resolve([{},{},{},{}]);
-        });
+    add(item){
+        return this.couchbaseClient.create(item.id, item);
+    }
+
+    getAll(){
+        return this.couchbaseClient.getAll();
+    }
+
+    query(queryClause){
+        return this.couchbaseClient.query(queryClause);
     }
 }
 

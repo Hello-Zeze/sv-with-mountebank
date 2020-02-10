@@ -7,6 +7,7 @@ class HttpApi {
         const self = this;
         app.get('/order/:clientId', (req,res)=>{self.handleGetAll(self.service, req, res);});
         app.post('/order/:clientId', (req,res)=>{self.handleCreateOrder(self.service, req, res);});
+        app.get('/order/:clientId/:orderId', (req,res)=>{self.handleGetAll(self.service, req, res);});
     }
 
     handleGetAll(svc,req,res){
@@ -25,6 +26,15 @@ class HttpApi {
             res.status(200).send(result);
         }).catch(err=>{
             res.status(500).send(`An error occured creating order. ${err}`);
+        });
+    }
+
+    handleGetOrderById(svc,req,res){
+        const orderId = req.params.orderId;
+        svc.getOrderById(orderId).then(result=>{
+            res.status(200).send(result);
+        }).catch(err=>{
+            res.status(500).send(`An error occured retrieving order. ${err}`);
         });
     }
 }

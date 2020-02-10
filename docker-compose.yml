@@ -11,7 +11,7 @@ services:
       - ./couch:/opt/couchbase/var
 
   orders_service:
-    image: registry.gitlab.com/ems_ambo/infrastructure/ambo_request_service:latest
+    image: orders-service:local
     ports:
       - "3001:3000"
     environment:
@@ -25,65 +25,42 @@ services:
       - couchbase
   
   products_service:
-    image: registry.gitlab.com/ems_ambo/infrastructure/ambo_request_service:latest
+    image: products-service:local
     ports:
       - "3002:3000"
     environment:
       COUCHBASE_HOST: "couchbase"
       COUCHBASE_CLUSTER_USERNAME: "Administrator"
       COUCHBASE_CLUSTER_PASSWORD: "Password01"
-      COUCHBASE_ORDERS_BUCKET: "Orders"
-      SMS_SERVICE_HOST: "sms_notification_service"
-      SMS_SERVICE_PORT: 50051
+      COUCHBASE_PRODUCTS_BUCKET: "Products"      
     depends_on:
       - couchbase
 
   recommendations_service:
-    image: registry.gitlab.com/ems_ambo/infrastructure/ambo_request_service:latest
+    image: recommendations-service:local
     ports:
       - "3003:3000"
     environment:
       COUCHBASE_HOST: "couchbase"
       COUCHBASE_CLUSTER_USERNAME: "Administrator"
       COUCHBASE_CLUSTER_PASSWORD: "Password01"
-      COUCHBASE_ORDERS_BUCKET: "Orders"
-      SMS_SERVICE_HOST: "sms_notification_service"
-      SMS_SERVICE_PORT: 50051
+      COUCHBASE_RECOMMENDATIONS_BUCKET: "Recommendations"
     depends_on:
       - couchbase
 
   shopping_cart_service:
-    image: registry.gitlab.com/ems_ambo/infrastructure/ambo_request_service:latest
+    image: shopping-cart-service:local
     ports:
       - "3004:3000"
     environment:
       COUCHBASE_HOST: "couchbase"
       COUCHBASE_CLUSTER_USERNAME: "Administrator"
       COUCHBASE_CLUSTER_PASSWORD: "Password01"
-      COUCHBASE_ORDERS_BUCKET: "Orders"
-      SMS_SERVICE_HOST: "sms_notification_service"
-      SMS_SERVICE_PORT: 50051
-    depends_on:
-      - couchbase
-
-  sms_notification_service:
-    image:  registry.gitlab.com/ems_ambo/infrastructure/sms_notification_service:latest
-    ports:
-      - "50051:50051"      
-    environment:
-      COUCHBASE_HOST: "couchbase"
-      COUCHBASE_CLUSTER_USERNAME: "Administrator"
-      COUCHBASE_CLUSTER_PASSWORD: "Password01"
-      COUCHBASE_SMS_QUEUE_BUCKET: "SMSQueue"
-      SMS_GATEWAY_HOST: "http://api.clickatell.com/http/sendmsg"
-      SMS_GATEWAY_QUERY_ENDPOINT: "http://api.clickatell.com/http/querymsg"
-      SMS_GATEWAY_USERNAME: "Fish_Info"
-      SMS_GATEWAY_PASSWORD: "QeVzmjWY"
-      SMS_GATEWAY_API_KEY: "3429467"
+      COUCHBASE_SHOPPINGCART_BUCKET: "ShoppingCart"      
     depends_on:
       - couchbase
 
   frontend:
-    image:  registry.gitlab.com/ems_ambo/infrastructure/sms_notification_service:latest
+    image:  frontend:local
     ports:
       - "3005:80"

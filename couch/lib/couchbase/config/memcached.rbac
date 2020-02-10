@@ -1,0 +1,303 @@
+{
+  "@ns_server": {
+    "buckets": {
+      "*": [
+        "all"
+      ]
+    },
+    "privileges": [
+      "all"
+    ],
+    "domain": "local"
+  },
+  "@cbq-engine": {
+    "buckets": {
+      "*": [
+        "all"
+      ]
+    },
+    "privileges": [
+      "all"
+    ],
+    "domain": "local"
+  },
+  "@projector": {
+    "buckets": {
+      "*": [
+        "all"
+      ]
+    },
+    "privileges": [
+      "all"
+    ],
+    "domain": "local"
+  },
+  "@goxdcr": {
+    "buckets": {
+      "*": [
+        "all"
+      ]
+    },
+    "privileges": [
+      "all"
+    ],
+    "domain": "local"
+  },
+  "@index": {
+    "buckets": {
+      "*": [
+        "all"
+      ]
+    },
+    "privileges": [
+      "all"
+    ],
+    "domain": "local"
+  },
+  "@fts": {
+    "buckets": {
+      "*": [
+        "all"
+      ]
+    },
+    "privileges": [
+      "all"
+    ],
+    "domain": "local"
+  },
+  "@eventing": {
+    "buckets": {
+      "*": [
+        "all"
+      ]
+    },
+    "privileges": [
+      "all"
+    ],
+    "domain": "local"
+  },
+  "@cbas": {
+    "buckets": {
+      "*": [
+        "all"
+      ]
+    },
+    "privileges": [
+      "all"
+    ],
+    "domain": "local"
+  },
+  "Administrator": {
+    "buckets": {
+      "Recommendations": [
+        "DcpConsumer",
+        "DcpProducer",
+        "Delete",
+        "Insert",
+        "MetaRead",
+        "MetaWrite",
+        "Read",
+        "SimpleStats",
+        "SystemXattrRead",
+        "SystemXattrWrite",
+        "Upsert",
+        "XattrRead",
+        "XattrWrite"
+      ],
+      "ShoppingCart": [
+        "DcpConsumer",
+        "DcpProducer",
+        "Delete",
+        "Insert",
+        "MetaRead",
+        "MetaWrite",
+        "Read",
+        "SimpleStats",
+        "SystemXattrRead",
+        "SystemXattrWrite",
+        "Upsert",
+        "XattrRead",
+        "XattrWrite"
+      ],
+      "Orders": [
+        "DcpConsumer",
+        "DcpProducer",
+        "Delete",
+        "Insert",
+        "MetaRead",
+        "MetaWrite",
+        "Read",
+        "SimpleStats",
+        "SystemXattrRead",
+        "SystemXattrWrite",
+        "Upsert",
+        "XattrRead",
+        "XattrWrite"
+      ],
+      "Products": [
+        "DcpConsumer",
+        "DcpProducer",
+        "Delete",
+        "Insert",
+        "MetaRead",
+        "MetaWrite",
+        "Read",
+        "SimpleStats",
+        "SystemXattrRead",
+        "SystemXattrWrite",
+        "Upsert",
+        "XattrRead",
+        "XattrWrite"
+      ],
+      "SMSQueue": [
+        "DcpConsumer",
+        "DcpProducer",
+        "Delete",
+        "Insert",
+        "MetaRead",
+        "MetaWrite",
+        "Read",
+        "SimpleStats",
+        "SystemXattrRead",
+        "SystemXattrWrite",
+        "Upsert",
+        "XattrRead",
+        "XattrWrite"
+      ]
+    },
+    "privileges": [
+      "AuditManagement",
+      "BucketManagement",
+      "IdleConnection",
+      "NodeManagement",
+      "SessionManagement",
+      "Stats"
+    ],
+    "domain": "local"
+  },
+  "Recommendations;legacy": {
+    "buckets": {
+      "Recommendations": [
+        "DcpConsumer",
+        "DcpProducer",
+        "Delete",
+        "Insert",
+        "MetaRead",
+        "MetaWrite",
+        "Read",
+        "SimpleStats",
+        "SystemXattrRead",
+        "SystemXattrWrite",
+        "Upsert",
+        "XattrRead",
+        "XattrWrite"
+      ],
+      "ShoppingCart": [],
+      "Orders": [],
+      "Products": [],
+      "SMSQueue": []
+    },
+    "privileges": [],
+    "domain": "local"
+  },
+  "ShoppingCart;legacy": {
+    "buckets": {
+      "Recommendations": [],
+      "ShoppingCart": [
+        "DcpConsumer",
+        "DcpProducer",
+        "Delete",
+        "Insert",
+        "MetaRead",
+        "MetaWrite",
+        "Read",
+        "SimpleStats",
+        "SystemXattrRead",
+        "SystemXattrWrite",
+        "Upsert",
+        "XattrRead",
+        "XattrWrite"
+      ],
+      "Orders": [],
+      "Products": [],
+      "SMSQueue": []
+    },
+    "privileges": [],
+    "domain": "local"
+  },
+  "Orders;legacy": {
+    "buckets": {
+      "Recommendations": [],
+      "ShoppingCart": [],
+      "Orders": [
+        "DcpConsumer",
+        "DcpProducer",
+        "Delete",
+        "Insert",
+        "MetaRead",
+        "MetaWrite",
+        "Read",
+        "SimpleStats",
+        "SystemXattrRead",
+        "SystemXattrWrite",
+        "Upsert",
+        "XattrRead",
+        "XattrWrite"
+      ],
+      "Products": [],
+      "SMSQueue": []
+    },
+    "privileges": [],
+    "domain": "local"
+  },
+  "Products;legacy": {
+    "buckets": {
+      "Recommendations": [],
+      "ShoppingCart": [],
+      "Orders": [],
+      "Products": [
+        "DcpConsumer",
+        "DcpProducer",
+        "Delete",
+        "Insert",
+        "MetaRead",
+        "MetaWrite",
+        "Read",
+        "SimpleStats",
+        "SystemXattrRead",
+        "SystemXattrWrite",
+        "Upsert",
+        "XattrRead",
+        "XattrWrite"
+      ],
+      "SMSQueue": []
+    },
+    "privileges": [],
+    "domain": "local"
+  },
+  "SMSQueue;legacy": {
+    "buckets": {
+      "Recommendations": [],
+      "ShoppingCart": [],
+      "Orders": [],
+      "Products": [],
+      "SMSQueue": [
+        "DcpConsumer",
+        "DcpProducer",
+        "Delete",
+        "Insert",
+        "MetaRead",
+        "MetaWrite",
+        "Read",
+        "SimpleStats",
+        "SystemXattrRead",
+        "SystemXattrWrite",
+        "Upsert",
+        "XattrRead",
+        "XattrWrite"
+      ]
+    },
+    "privileges": [],
+    "domain": "local"
+  }
+}

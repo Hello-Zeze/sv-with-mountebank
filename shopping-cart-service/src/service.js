@@ -1,14 +1,16 @@
+const uuid = require('uuid/v4');
 class Service {
     constructor(dataAccess){
         this.dataAccess = dataAccess;
     }
 
-    getItems(cartId){
-        return this.dataAccess.getAll(cartId);
+    getItems(){
+        return this.dataAccess.getAll();
     }
 
-    addItem(cartId, item){
-        return this.dataAccess.add(cartId, item);
+    addItem(item){
+        item.id = uuid();
+        return this.dataAccess.add(item);
     }
 }
 

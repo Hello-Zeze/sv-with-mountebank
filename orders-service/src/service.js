@@ -1,3 +1,4 @@
+const uuid = require('uuid/v4');
 class Service {
     constructor(dataAccess){
         this.dataAccess = dataAccess;
@@ -12,6 +13,7 @@ class Service {
     }
 
     createOrder(order){
+        order.id = uuid();
         return this.dataAccess.add(order);
     }
 }
