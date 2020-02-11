@@ -1,0 +1,41 @@
+[user]
+	email = zethembiso.msomi@gmail.com
+	name = HelloZeze
+[alias]
+	st = status
+	re = rebase
+	ps = push
+	fe = fetch
+	fr = pull --rebase
+	branches = branch -a
+	#commits
+	cm = commit -m
+	c = commit --verbose
+	#Checkouts
+	co = checkout
+	cob = checkout -b
+	# list branches sorted by last modified
+	b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+	# list aliases
+	la = "!git config -l | grep alias | cut -c 7-"
+	#logging
+	lgNoGraph = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+	lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n'' %C(white)%s%C(reset)á¹„ %C(dim white)- %an%C(reset)' --all
+	lg = !"git lg1"
+	#Whoopsies
+	undo-commit = reset --soft HEAD~1
+	TossItAll = reset --hard
+	forgotThis = commit --amend
+	change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f "
+
+
+[merge]
+    tool = meld
+[mergetool "meld"]
+    # Choose one of these 2 lines (not both!) explained below.
+    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"        
+[push]
+	default = simple
+[credential]
+	helper = store
