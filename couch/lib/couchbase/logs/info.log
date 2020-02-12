@@ -28052,3 +28052,51 @@ ns_couchdb<0.190.0>: Apache CouchDB has started. Time to relax.
 [ns_server:info,2020-02-12T06:41:36.056Z,ns_1@127.0.0.1:<0.9823.25>:compaction_new_daemon:spawn_scheduled_views_compactor:497]Start compaction of indexes for bucket Orders with config: 
 [{database_fragmentation_threshold,{30,undefined}},
  {view_fragmentation_threshold,{30,undefined}}]
+[ns_server:info,2020-02-12T06:42:04.737Z,ns_1@127.0.0.1:<0.11944.25>:compaction_new_daemon:spawn_scheduled_kv_compactor:471]Start compaction of vbuckets for bucket ShoppingCart with config: 
+[{database_fragmentation_threshold,{30,undefined}},
+ {view_fragmentation_threshold,{30,undefined}}]
+[ns_server:info,2020-02-12T06:42:04.741Z,ns_1@127.0.0.1:<0.11941.25>:compaction_new_daemon:spawn_scheduled_kv_compactor:471]Start compaction of vbuckets for bucket Recommendations with config: 
+[{database_fragmentation_threshold,{30,undefined}},
+ {view_fragmentation_threshold,{30,undefined}}]
+[ns_server:info,2020-02-12T06:42:04.745Z,ns_1@127.0.0.1:<0.11940.25>:compaction_new_daemon:spawn_scheduled_kv_compactor:471]Start compaction of vbuckets for bucket Products with config: 
+[{database_fragmentation_threshold,{30,undefined}},
+ {view_fragmentation_threshold,{30,undefined}}]
+[ns_server:info,2020-02-12T06:42:04.750Z,ns_1@127.0.0.1:<0.11953.25>:compaction_new_daemon:spawn_scheduled_kv_compactor:471]Start compaction of vbuckets for bucket Orders with config: 
+[{database_fragmentation_threshold,{30,undefined}},
+ {view_fragmentation_threshold,{30,undefined}}]
+[ns_server:info,2020-02-12T06:42:04.774Z,ns_1@127.0.0.1:<0.11952.25>:compaction_new_daemon:spawn_scheduled_views_compactor:497]Start compaction of indexes for bucket ShoppingCart with config: 
+[{database_fragmentation_threshold,{30,undefined}},
+ {view_fragmentation_threshold,{30,undefined}}]
+[ns_server:info,2020-02-12T06:42:04.776Z,ns_1@127.0.0.1:<0.11962.25>:compaction_new_daemon:spawn_scheduled_views_compactor:497]Start compaction of indexes for bucket Recommendations with config: 
+[{database_fragmentation_threshold,{30,undefined}},
+ {view_fragmentation_threshold,{30,undefined}}]
+[ns_server:info,2020-02-12T06:42:04.782Z,ns_1@127.0.0.1:<0.11961.25>:compaction_new_daemon:spawn_scheduled_views_compactor:497]Start compaction of indexes for bucket Products with config: 
+[{database_fragmentation_threshold,{30,undefined}},
+ {view_fragmentation_threshold,{30,undefined}}]
+[ns_server:info,2020-02-12T06:42:04.785Z,ns_1@127.0.0.1:<0.11959.25>:compaction_new_daemon:spawn_scheduled_views_compactor:497]Start compaction of indexes for bucket Orders with config: 
+[{database_fragmentation_threshold,{30,undefined}},
+ {view_fragmentation_threshold,{30,undefined}}]
+[ns_server:info,2020-02-12T06:42:34.462Z,ns_1@127.0.0.1:<0.14120.25>:compaction_new_daemon:spawn_scheduled_kv_compactor:471]Start compaction of vbuckets for bucket ShoppingCart with config: 
+[{database_fragmentation_threshold,{30,undefined}},
+ {view_fragmentation_threshold,{30,undefined}}]
+[ns_server:info,2020-02-12T06:42:34.465Z,ns_1@127.0.0.1:<0.14123.25>:compaction_new_daemon:spawn_scheduled_kv_compactor:471]Start compaction of vbuckets for bucket Recommendations with config: 
+[{database_fragmentation_threshold,{30,undefined}},
+ {view_fragmentation_threshold,{30,undefined}}]
+[ns_server:info,2020-02-12T06:42:34.467Z,ns_1@127.0.0.1:<0.14119.25>:compaction_new_daemon:spawn_scheduled_kv_compactor:471]Start compaction of vbuckets for bucket Products with config: 
+[{database_fragmentation_threshold,{30,undefined}},
+ {view_fragmentation_threshold,{30,undefined}}]
+[ns_server:info,2020-02-12T06:42:34.470Z,ns_1@127.0.0.1:<0.14133.25>:compaction_new_daemon:spawn_scheduled_kv_compactor:471]Start compaction of vbuckets for bucket Orders with config: 
+[{database_fragmentation_threshold,{30,undefined}},
+ {view_fragmentation_threshold,{30,undefined}}]
+[ns_server:info,2020-02-12T06:42:34.497Z,ns_1@127.0.0.1:<0.14131.25>:compaction_new_daemon:spawn_scheduled_views_compactor:497]Start compaction of indexes for bucket ShoppingCart with config: 
+[{database_fragmentation_threshold,{30,undefined}},
+ {view_fragmentation_threshold,{30,undefined}}]
+[ns_server:info,2020-02-12T06:42:34.498Z,ns_1@127.0.0.1:<0.14129.25>:compaction_new_daemon:spawn_scheduled_views_compactor:497]Start compaction of indexes for bucket Recommendations with config: 
+[{database_fragmentation_threshold,{30,undefined}},
+ {view_fragmentation_threshold,{30,undefined}}]
+[ns_server:info,2020-02-12T06:42:34.500Z,ns_1@127.0.0.1:<0.14137.25>:compaction_new_daemon:spawn_scheduled_views_compactor:497]Start compaction of indexes for bucket Products with config: 
+[{database_fragmentation_threshold,{30,undefined}},
+ {view_fragmentation_threshold,{30,undefined}}]
+[ns_server:info,2020-02-12T06:42:34.502Z,ns_1@127.0.0.1:<0.14136.25>:compaction_new_daemon:spawn_scheduled_views_compactor:497]Start compaction of indexes for bucket Orders with config: 
+[{database_fragmentation_threshold,{30,undefined}},
+ {view_fragmentation_threshold,{30,undefined}}]
