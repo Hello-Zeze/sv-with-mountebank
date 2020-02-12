@@ -1,0 +1,7 @@
+#products-listing-container{
+    margin: 0 auto;
+    height: 100%;
+    width: 960px;
+    display: flex;
+    margin-top:5px;
+}

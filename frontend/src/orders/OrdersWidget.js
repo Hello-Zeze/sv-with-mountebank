@@ -26,7 +26,7 @@ export default class OrdersWidget extends React.Component {
     }
 
     componentDidMount(){
-        OrdersActionCreator.loadOrders();
+        //OrdersActionCreator.loadOrders();
     }
 
     handleOrdersLoadSuccess = (data) => {

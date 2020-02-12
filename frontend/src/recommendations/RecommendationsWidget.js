@@ -28,7 +28,7 @@ export default class RecommendationsWidget extends React.Component {
     }
 
     componentDidMount(){
-        RecommendationsActionCreator.loadRecommendations(this.props.ProductId);
+        //RecommendationsActionCreator.loadRecommendations(this.props.ProductId);
     }
 
     handleRecommendationsLoadSuccess = (data) => {

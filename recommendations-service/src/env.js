@@ -21,11 +21,17 @@ class Environment {
             return false;
         }
 
+        if(process.env.ALLOWED_ORIGINS === undefined){
+            console.error('ALLOWED_ORIGINS not set.');
+            return false;
+        }
+
         console.log(`Used Configuration:`);        
         console.log(`COUCHBASE_HOST: ${process.env.COUCHBASE_HOST}`);
         console.log(`COUCHBASE_CLUSTER_USERNAME: ${process.env.COUCHBASE_CLUSTER_USERNAME}`);
         console.log(`COUCHBASE_CLUSTER_PASSWORD: ${process.env.COUCHBASE_CLUSTER_PASSWORD}`);
         console.log(`COUCHBASE_RECOMMENDATIONS_BUCKET: ${process.env.COUCHBASE_RECOMMENDATIONS_BUCKET}`);
+        console.log(`ALLOWED_ORIGINS: ${process.env.ALLOWED_ORIGINS}`);
 
         return true;
     }

@@ -3,10 +3,10 @@ import './App.css';
 import MainBar from './layout/mainbar';
 import ProductsListing from './products/ProductsListing';
 
-function App() {
+function App() {  
   return (
-    <div className="App">
-      <MainBar />
+    <div className="App">      
+      <MainBar/>
       <ProductsListing />
     </div>
   );

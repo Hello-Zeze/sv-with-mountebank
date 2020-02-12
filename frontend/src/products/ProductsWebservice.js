@@ -9,7 +9,7 @@ class ProductsWebservice {
 
     loadProducts(){
         const payload = {
-            url:`${this.productsSvc}/`,
+            url:`${this.productsSvc}`,
             method: 'GET'
         };
         return this._webservice.execute(payload);

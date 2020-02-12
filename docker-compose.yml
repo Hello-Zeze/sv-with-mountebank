@@ -19,8 +19,7 @@ services:
       COUCHBASE_CLUSTER_USERNAME: "Administrator"
       COUCHBASE_CLUSTER_PASSWORD: "Password01"
       COUCHBASE_ORDERS_BUCKET: "Orders"
-      SMS_SERVICE_HOST: "sms_notification_service"
-      SMS_SERVICE_PORT: 50051
+      ALLOWED_ORIGINS: "localhost:3000"      
     depends_on:
       - couchbase
   
@@ -33,6 +32,7 @@ services:
       COUCHBASE_CLUSTER_USERNAME: "Administrator"
       COUCHBASE_CLUSTER_PASSWORD: "Password01"
       COUCHBASE_PRODUCTS_BUCKET: "Products"      
+      ALLOWED_ORIGINS: "*"
     depends_on:
       - couchbase
 
@@ -45,6 +45,7 @@ services:
       COUCHBASE_CLUSTER_USERNAME: "Administrator"
       COUCHBASE_CLUSTER_PASSWORD: "Password01"
       COUCHBASE_RECOMMENDATIONS_BUCKET: "Recommendations"
+      ALLOWED_ORIGINS: "localhost:3000"
     depends_on:
       - couchbase
 
@@ -56,11 +57,12 @@ services:
       COUCHBASE_HOST: "couchbase"
       COUCHBASE_CLUSTER_USERNAME: "Administrator"
       COUCHBASE_CLUSTER_PASSWORD: "Password01"
-      COUCHBASE_SHOPPINGCART_BUCKET: "ShoppingCart"      
+      COUCHBASE_SHOPPINGCART_BUCKET: "ShoppingCart"
+      ALLOWED_ORIGINS: "localhost:3000"
     depends_on:
       - couchbase
 
-  frontend:
-    image:  frontend:local
-    ports:
-      - "3005:80"
+  # frontend:
+  #   image:  frontend:local
+  #   ports:
+  #     - "3005:80"

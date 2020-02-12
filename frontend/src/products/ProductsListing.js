@@ -1,25 +1,25 @@
 import React from 'react';
+import _ from 'lodash';
 import ProductsActionCreator from './ProductsActionCreator';
 import ProductsStore from './ProductsStore';
 import { ProductsActionTypes } from './ProductsActionTypes';
-import './products-listing.scss';
+import ProductListingItem from './ProductListingItem';
+import './products-listing.css';
 
 export default class ProductsListing extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            productsList:[]
+            productsList:[]            
         }
     }
 
     componentWillMount(){
-        ProductsStore.addEventListener(ProductsActionTypes.PRODUCTS_LOAD_SUCCESS, this.handleProductsLoadSuccess);
-        ProductsStore.addEventListener(ProductsActionTypes.PRODUCTS_LOAD_FAIL, this.handleProductsLoadFail);
+        ProductsStore.addEventListener(ProductsActionTypes.PRODUCTS_LOAD_SUCCESS, this.handleProductsLoadSuccess);        
     }
 
     componentWillUnmount(){
         ProductsStore.removeEventListener(ProductsActionTypes.PRODUCTS_LOAD_SUCCESS, this.handleProductsLoadSuccess);
-        ProductsStore.removeEventListener(ProductsActionTypes.PRODUCTS_LOAD_FAIL, this.handleProductsLoadFail);
     }
 
     componentDidMount(){
@@ -30,13 +30,25 @@ export default class ProductsListing extends React.Component {
         this.setState({productsList: data});
     }
 
-    handleProductsLoadFail = (data) => {
-        //TODO: show toastr
+    handleItemPurchaseClick = (data) => {
+        
     }
 
     render(){
         return(
-            <div></div>
+            <div id="products-listing-container">
+                {_.map(this.state.productsList, product=>{
+                    return <ProductListingItem id="products-listing-container"
+                             key={product.id}
+                             Id={product.id}
+                             Title={product.title}
+                             Description={product.desc}
+                             Price={product.price}
+                             ImgUrl={product.imgUrl}
+                             PurchaseClickCb={this.handleItemPurchaseClick}
+                           />
+                })}
+            </div>
         );
     }
 }

@@ -8,6 +8,7 @@ const http = require('http').Server(app);
 const bodyParser = require('body-parser');
 
 const env = require('./env');
+const cors = require('cors');
 
 app.use(bodyParser.json({type: 'application/json'}));
 app.use(bodyParser.urlencoded({extended:true}));
@@ -27,8 +28,16 @@ if(env.canRun()){
     const service = new Service(dataAccess);
     const httpApi = new HttpApi(service);
 
+    app.use(cors({
+        origin: '*',
+        optionsSuccessStatus: 200
+    }));
+    app.use((req,res,next)=>{
+        res.header("Access-Control-Allow-Origin", process.env.ALLOWED_ORIGINS);
+        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+        next();
+    });
     httpApi.configure(app);
-
     app.get('/ping', (req,res)=>{
         res.status(200).send('pong');
     });

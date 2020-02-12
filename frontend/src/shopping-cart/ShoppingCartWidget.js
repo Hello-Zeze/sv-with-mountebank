@@ -30,7 +30,7 @@ export default class ShoppingCartWidget extends React.Component {
     }
 
     componentDidMount(){
-        ShoppingCartActionCreator.loadShoppingCart(this.props.CartId);
+        //ShoppingCartActionCreator.loadShoppingCart(this.props.CartId);
     }
 
     handleShoppingCartLoadSuccess = (data) => {

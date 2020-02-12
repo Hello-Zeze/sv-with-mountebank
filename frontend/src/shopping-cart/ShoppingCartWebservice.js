@@ -7,18 +7,19 @@ class ShoppingCartWebservice {
         this.shoppingCartSvc = ApiDirectory.getApiEndpoint('shoppingCartSvc');
     }
 
-    loadShoppingCartData(cartId){
+    loadShoppingCartData(){
         const payload = {
-            url:`${this.shoppingCartSvc}/${cartId}`,
+            url:`${this.shoppingCartSvc}`,
             method: 'GET'
         };
         return this._webservice.execute(payload);
     }
 
-    addToShoppingCart(cartId, productId){
+    addToShoppingCart(data){
         const payload = {
-            url:`${this.shoppingCartSvc}/${cartId}/${productId}`,
-            method: 'GET'
+            url:`${this.shoppingCartSvc}`,
+            method: 'POST',
+            content: data
         };
         return this._webservice.execute(payload);
     }
