@@ -1,30 +1,58 @@
 import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
-import Badge from '@material-ui/core/Badge';
+import { AppBar, Toolbar, IconButton, Typography, Badge } from '@material-ui/core';
 import { ShoppingCartRounded }from '@material-ui/icons';
-import ShoppingCartWidget from '../shopping-cart/ShoppingCartWidget';
+import ShoppingCartActionCreator from '../shopping-cart/ShoppingCartActionCreator';
+import ShoppingCartStore from '../shopping-cart/ShoppingCartStore';
+import { ShoppingCartActionTypes } from '../shopping-cart/ShoppingCartActionTypes';
 
 import './mainbar.css';
 
 export default class MainBar extends React.Component {
     constructor(props){
         super(props);
+        this.state = {
+            shoppingCartItemCount:0
+        }
     }
+
+    componentWillMount(){
+        ShoppingCartStore.addEventListener(ShoppingCartActionTypes.SHOPPING_CART_LOAD_SUCCESS, this.handleShoppingCartLoaded);
+        ShoppingCartStore.addEventListener(ShoppingCartActionTypes.SHOPPING_CART_ADD_ITEM_SUCCESS, this.handleShoppingCartUpdated);
+    }
+
+    componentWillUnmount(){
+        ShoppingCartStore.removeEventListener(ShoppingCartActionTypes.SHOPPING_CART_LOAD_SUCCESS, this.handleShoppingCartLoaded);
+        ShoppingCartStore.removeEventListener(ShoppingCartActionTypes.SHOPPING_CART_ADD_ITEM_SUCCESS, this.handleShoppingCartUpdated);
+    }
+
+    componentDidMount(){
+        ShoppingCartActionCreator.loadShoppingCart();
+    }
+
+    handleShoppingCartLoaded = (data) => {
+        this.setState({shoppingCartItemCount: data.length});
+    }
+
+    handleShoppingCartUpdated = (data) => {
+        const shoppingItemCount = ShoppingCartStore.transformState(state=>state.cartItems.length);
+        this.setState({shoppingCartItemCount: shoppingItemCount});
+    }
+
     render(){
         return(
             <div id="main-app-bar">
                 <AppBar position="static" color="default">
                     <Toolbar>                    
                         <Typography variant="h6" noWrap>
-                            Duck 'R' Us
+                            Ducks 'R' Us
                         </Typography>
-                        <IconButton aria-label="show 4 new mails" color="inherit">
-                            <Badge badgeContent={1} color="secondary">
+                        <IconButton aria-label="" color="inherit">
+                            {(this.state.shoppingCartItemCount === 0)?
+                            <ShoppingCartRounded />:
+                            <Badge badgeContent={this.state.shoppingCartItemCount} color="secondary">
                                 <ShoppingCartRounded />
                             </Badge>
+                            }                            
                         </IconButton>
                     </Toolbar>
                 </AppBar>

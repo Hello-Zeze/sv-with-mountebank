@@ -24,6 +24,12 @@ class OrdersStore extends BaseStore{
             case OrdersActionTypes.ORDER_CREATE_FAIL:
                 this.handleCreateOrderFail(action);
                 break;
+            case OrdersActionTypes.ORDER_DATA_LOAD_SUCCESS:
+                this.handleOrderDataLoadSuccess(action);
+                break;
+            case OrdersActionTypes.ORDER_DATA_LOAD_FAIL:
+                this.handleOrderDataLoadFail(action);
+                break;
             default:
                 break;
         }
@@ -39,11 +45,26 @@ class OrdersStore extends BaseStore{
     }
 
     handleCreateOrderSuccess(action){
+        this.state.orders.push(action.payload);
         this.emit(OrdersActionTypes.ORDER_CREATE_SUCCESS, action.payload);
     }
 
     handleCreateOrderFail(action){
         this.emit(OrdersActionTypes.ORDER_CREATE_FAIL, action.payload);
+    }
+
+    handleOrderDataLoadSuccess(action){
+        const updatedOrders = this.state.orders.map(order=>{
+            if(order.id === action.payload.id){
+                order.status = action.payload.status;
+            }
+        });
+        this.state.orders = updatedOrders;
+        this.emit(OrdersActionTypes.ORDER_DATA_LOAD_SUCCESS, action.payload);
+    }
+
+    handleOrderDataLoadFail(action){
+        this.emit(OrdersActionTypes.ORDER_DATA_LOAD_FAIL, action.payload);
     }
 }
 

@@ -5,14 +5,13 @@ class HttpApi {
 
     configure(app){
         const self = this;
-        app.get('/order/:clientId', (req,res)=>{self.handleGetAll(self.service, req, res);});
-        app.post('/order/:clientId', (req,res)=>{self.handleCreateOrder(self.service, req, res);});
-        app.get('/order/:clientId/:orderId', (req,res)=>{self.handleGetAll(self.service, req, res);});
+        app.get('/order', (req,res)=>{self.handleGetAll(self.service, req, res);});
+        app.post('/order', (req,res)=>{self.handleCreateOrder(self.service, req, res);});
+        app.get('/order/:orderId', (req,res)=>{self.handleGetOrderById(self.service, req, res);});
     }
 
-    handleGetAll(svc,req,res){
-        const clientId = req.params.clientId;
-        svc.getAllOrders(clientId).then(result=>{
+    handleGetAll(svc,req,res){        
+        svc.getAllOrders().then(result=>{
             res.status(200).send(result);
         }).catch(err=>{
             res.status(500).send(`An error occured retrieving orders. ${err}`);
@@ -20,9 +19,9 @@ class HttpApi {
     }
 
     handleCreateOrder(svc,req,res){
-        const clientId = req.params.clientId;
-        const order = req.body;
-        svc.createOrder(clientId, order).then(result=>{
+        let order = req.body;
+        order.status = "Order Created";
+        svc.createOrder(order).then(result=>{
             res.status(200).send(result);
         }).catch(err=>{
             res.status(500).send(`An error occured creating order. ${err}`);

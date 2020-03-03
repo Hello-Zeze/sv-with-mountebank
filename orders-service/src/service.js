@@ -14,7 +14,14 @@ class Service {
 
     createOrder(order){
         order.id = uuid();
-        return this.dataAccess.add(order);
+        const request = this.dataAccess.add(order);
+        return new Promise((resolve,reject)=>{
+            request.then(result=>{
+                resolve(order);
+            }).catch(err=>{
+                reject(err);
+            });
+        });
     }
 }
 

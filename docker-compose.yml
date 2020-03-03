@@ -19,7 +19,7 @@ services:
       COUCHBASE_CLUSTER_USERNAME: "Administrator"
       COUCHBASE_CLUSTER_PASSWORD: "Password01"
       COUCHBASE_ORDERS_BUCKET: "Orders"
-      ALLOWED_ORIGINS: "localhost:3000"      
+      ALLOWED_ORIGINS: "*"      
     depends_on:
       - couchbase
   
@@ -58,7 +58,7 @@ services:
       COUCHBASE_CLUSTER_USERNAME: "Administrator"
       COUCHBASE_CLUSTER_PASSWORD: "Password01"
       COUCHBASE_SHOPPINGCART_BUCKET: "ShoppingCart"
-      ALLOWED_ORIGINS: "localhost:3000"
+      ALLOWED_ORIGINS: "*"
     depends_on:
       - couchbase
 

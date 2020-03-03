@@ -1,0 +1,33 @@
+{"message":"[mb:2525] mountebank v2.0.0 now taking orders - point your browser to http://localhost:2525/ for help","level":"info","timestamp":"2020-02-22T12:17:17.201Z"}
+{"message":"[mb:2525] POST /imposters","level":"info","timestamp":"2020-02-22T12:17:26.402Z"}
+{"message":"[http:3002 ProductsServiceImposter_M] Open for business...","level":"info","timestamp":"2020-02-22T12:17:26.425Z"}
+{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-22T12:17:39.504Z"}
+{"message":"[http:3002 ProductsServiceImposter_M] ::1:59944 => GET /product","level":"info","timestamp":"2020-02-22T12:17:52.791Z"}
+{"message":"[http:3002 ProductsServiceImposter_M] ::1:60036 => GET /product","level":"info","timestamp":"2020-02-22T12:17:54.895Z"}
+{"message":"[http:3002 ProductsServiceImposter_M] ::1:56498 => GET /products","level":"info","timestamp":"2020-02-22T12:27:07.214Z"}
+{"message":"[http:3002 ProductsServiceImposter_M] ::1:57032 => GET /hello-kitty","level":"info","timestamp":"2020-02-22T12:27:18.909Z"}
+{"message":"[http:3002 ProductsServiceImposter_M] ::1:58092 => GET /hello-world","level":"info","timestamp":"2020-02-22T12:27:43.304Z"}
+{"message":"[http:3002 ProductsServiceImposter_M] ::1:59844 => GET /product","level":"info","timestamp":"2020-02-22T12:28:23.534Z"}
+{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-22T12:28:44.221Z"}
+{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-22T12:34:45.968Z"}
+{"message":"[mb:2525] DELETE /imposters","level":"info","timestamp":"2020-02-22T12:35:23.722Z"}
+{"message":"[http:3002 ProductsServiceImposter_M] Ciao for now","level":"info","timestamp":"2020-02-22T12:35:23.723Z"}
+{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-22T12:35:31.017Z"}
+{"message":"[mb:2525] POST /imposters","level":"info","timestamp":"2020-02-22T12:49:05.879Z"}
+{"message":"[http:3002 ProductsServiceImposter_M] Open for business...","level":"info","timestamp":"2020-02-22T12:49:05.884Z"}
+{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-22T12:49:11.987Z"}
+{"message":"[http:3002 ProductsServiceImposter_M] ::1:58356 => GET /product","level":"info","timestamp":"2020-02-22T12:49:17.440Z"}
+{"message":"[http:3002 ProductsServiceImposter_M] ::1:58978 => GET /product/397a5abe-0330-48d0-bb22-82aa6a0896cd","level":"info","timestamp":"2020-02-22T12:49:31.482Z"}
+{"message":"[http:3002 ProductsServiceImposter_M] ::1:59086 => GET /product/397a5abe-0330-48d0-bb22-82aa6a0896cd","level":"info","timestamp":"2020-02-22T12:49:34.254Z"}
+{"message":"[mb:2525] DELETE /imposters","level":"info","timestamp":"2020-02-22T12:50:16.152Z"}
+{"message":"[http:3002 ProductsServiceImposter_M] Ciao for now","level":"info","timestamp":"2020-02-22T12:50:16.153Z"}
+{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-22T12:50:22.496Z"}
+{"message":"[mb:2525] POST /imposters","level":"info","timestamp":"2020-02-22T12:51:36.181Z"}
+{"message":"[http:3002 ProductsServiceImposter_M] Open for business...","level":"info","timestamp":"2020-02-22T12:51:36.185Z"}
+{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-22T12:51:41.614Z"}
+{"message":"[http:3002 ProductsServiceImposter_M] ::1:36602 => GET /product","level":"info","timestamp":"2020-02-22T12:51:45.712Z"}
+{"message":"[http:3002 ProductsServiceImposter_M] ::1:36774 => GET /product/397a5abe-0330-48d0-bb22-82aa6a0896cd","level":"info","timestamp":"2020-02-22T12:51:49.931Z"}
+{"message":"[http:3002 ProductsServiceImposter_M] ::1:36846 => GET /product/397a5abe-0330-48d0-bb22-82aa6a0896cd","level":"info","timestamp":"2020-02-22T12:51:51.097Z"}
+{"message":"[http:3002 ProductsServiceImposter_M] ::1:36886 => GET /product/397a5abe-0330-48d0-bb22-82aa6a0896cd","level":"info","timestamp":"2020-02-22T12:51:51.926Z"}
+{"message":"[http:3002 ProductsServiceImposter_M] ::1:37684 => GET /product?id=397a5abe-0330-48d0-bb22-82aa6a0896cd","level":"info","timestamp":"2020-02-22T12:52:10.517Z"}
+{"message":"[http:3002 ProductsServiceImposter_M] ::1:37754 => GET /product?id=397a5abe-0330-48d0-bb22-82aa6a0896cd","level":"info","timestamp":"2020-02-22T12:52:11.737Z"}

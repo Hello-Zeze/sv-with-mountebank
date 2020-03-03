@@ -40,7 +40,7 @@ class ShoppingCartStore extends BaseStore{
 
     handleShoppingCartAddItemSuccess(action){
         this.state.cartItems.push(action.payload);
-        this.emit(ShoppingCartActionTypes.SHOPPING_CART_ADD_ITEM_SUCCESS, this.state.cartItems);
+        this.emit(ShoppingCartActionTypes.SHOPPING_CART_ADD_ITEM_SUCCESS, action.payload);
     }
 
     handleShoppingCartAddItemFail(action){

@@ -15,11 +15,19 @@ class OrdersWebservice {
         return this._webservice.execute(payload);
     }
 
-    createOrder(clientId,data){
+    createOrder(data){
         const payload = {
-            url:`${this.ordersSvc}/${clientId}`,
+            url:`${this.ordersSvc}`,
             method: 'POST',
             content: data
+        };
+        return this._webservice.execute(payload);
+    }
+
+    getOrderData(orderId){
+        const payload = {
+            url:`${this.ordersSvc}/${orderId}`,
+            method: 'GET'
         };
         return this._webservice.execute(payload);
     }

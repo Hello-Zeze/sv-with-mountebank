@@ -22,7 +22,7 @@ export default class ShoppingCartActionCreator {
         ShoppingCartWebservice.addToShoppingCart(productData).then(result=>{
             Dispatcher.dispatch({
                 type: ShoppingCartActionTypes.SHOPPING_CART_ADD_ITEM_SUCCESS,
-                payload: result
+                payload: {id: result, productId: productData.productId, orderId: productData.orderId}
             });
         }).catch(err=>{
             Dispatcher.dispatch({

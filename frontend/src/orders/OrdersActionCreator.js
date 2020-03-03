@@ -31,4 +31,18 @@ export default class OrdersActionCreator {
             });
         });
     }
+
+    static getOrderData(orderId){
+        OrdersWebservice.getOrderData(orderId).then(result=>{
+            Dispatcher.dispatch({
+                type: OrdersActionTypes.ORDER_DATA_LOAD_SUCCESS,
+                payload: result
+            });
+        }).catch(err=>{
+            Dispatcher.dispatch({
+                type: OrdersActionTypes.ORDER_DATA_LOAD_FAIL,
+                payload: err
+            });
+        });
+    }
 }
