@@ -36,19 +36,6 @@ services:
     depends_on:
       - couchbase
 
-  recommendations_service:
-    image: recommendations-service:local
-    ports:
-      - "3003:3000"
-    environment:
-      COUCHBASE_HOST: "couchbase"
-      COUCHBASE_CLUSTER_USERNAME: "Administrator"
-      COUCHBASE_CLUSTER_PASSWORD: "Password01"
-      COUCHBASE_RECOMMENDATIONS_BUCKET: "Recommendations"
-      ALLOWED_ORIGINS: "localhost:3000"
-    depends_on:
-      - couchbase
-
   shopping_cart_service:
     image: shopping-cart-service:local
     ports:
