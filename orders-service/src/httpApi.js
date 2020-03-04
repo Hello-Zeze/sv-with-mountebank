@@ -8,6 +8,7 @@ class HttpApi {
         app.get('/order', (req,res)=>{self.handleGetAll(self.service, req, res);});
         app.post('/order', (req,res)=>{self.handleCreateOrder(self.service, req, res);});
         app.get('/order/:orderId', (req,res)=>{self.handleGetOrderById(self.service, req, res);});
+        app.delete('/order/:orderId', (req,res)=>{self.handleDeleteOrder(self.service, req, res);});
     }
 
     handleGetAll(svc,req,res){        
@@ -34,6 +35,15 @@ class HttpApi {
             res.status(200).send(result);
         }).catch(err=>{
             res.status(500).send(`An error occured retrieving order. ${err}`);
+        });
+    }
+
+    handleDeleteOrder(svc,req,res){
+        const orderId = req.params.orderId;
+        svc.deleteOrder(orderId).then(result=>{
+            res.status(200).send('OK');
+        }).catch(err=>{
+            res.status(500).send(`An error occured deleting order. ${err}`);
         });
     }
 }

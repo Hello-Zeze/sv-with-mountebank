@@ -23,6 +23,10 @@ class Service {
             });
         });
     }
+
+    deleteOrder(orderId){
+        return this.dataAccess.removeById(orderId);
+    }
 }
 
 module.exports = Service;

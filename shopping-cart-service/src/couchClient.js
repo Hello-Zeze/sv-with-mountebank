@@ -113,6 +113,19 @@ class CouchbaseClient {
         });
       });
     }
+
+    removeById(documentId){
+      return new Promise((resolve,reject)=>{
+        const bucket = this.cluster.openBucket(this.bucketConfiguration.label);
+        bucket.remove(documentId, function(err, result){
+          if(err){
+            reject(err);
+          } else {
+            resolve(result.value);
+          }
+        });
+      });
+    }
 }
 
 module.exports = CouchbaseClient;

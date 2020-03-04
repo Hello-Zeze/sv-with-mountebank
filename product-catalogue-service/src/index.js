@@ -35,6 +35,7 @@ if(env.canRun()){
     app.use((req,res,next)=>{
         res.header("Access-Control-Allow-Origin", process.env.ALLOWED_ORIGINS);
         res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+        res.header("Access-Control-Allow-Methods", "OPTIONS,GET,POST,PUT,PATCH,DELETE");
         next();
     });
 

@@ -1,0 +1,92 @@
+{
+  "protocol": "http",
+  "port": 3004,
+  "name": "ShoppingCartServiceImposter_Proxy_with_PredicateHints",
+  "recordRequests": false,
+  "stubs": [
+    {
+      "predicates": [
+        {
+          "deepEquals": {
+            "method": "OPTIONS"
+          }
+        }
+      ],
+      "responses": [
+        {
+          "is": {
+            "statusCode": 200,
+            "headers": {
+              "X-Powered-By": "Express",
+              "Access-Control-Allow-Origin": "http://localhost:3000",
+              "Access-Control-Allow-Methods": "GET",
+              "Vary": "Access-Control-Request-Headers",
+              "Access-Control-Allow-Headers": "content-type",
+              "Content-Length": 0,
+              "Date": "Tue, 03 Mar 2020 20:14:22 GMT",
+              "Connection": "keep-alive"
+            },
+            "body": "",
+            "_mode": "text"
+          }
+        }
+      ]
+    },
+    {
+      "predicates": [
+        {
+          "deepEquals": {
+            "method": "GET"
+          }
+        }
+      ],
+      "responses": [
+        {
+          "is": {
+            "statusCode": 200,
+            "headers": {
+              "X-Powered-By": "Express",
+              "Access-Control-Allow-Origin": "*",
+              "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
+              "Content-Type": "application/json; charset=utf-8",
+              "Content-Length": 2,
+              "ETag": "W/\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\"",
+              "Date": "Tue, 03 Mar 2020 20:14:22 GMT",
+              "Connection": "keep-alive"
+            },
+            "body": "[]",
+            "_mode": "text"
+          }
+        }
+      ]
+    },
+    {
+      "predicates": [
+        {
+          "deepEquals": {
+            "method": "POST"
+          }
+        }
+      ],
+      "responses": [
+        {
+          "is": {
+            "statusCode": 200,
+            "headers": {
+              "X-Powered-By": "Express",
+              "Access-Control-Allow-Origin": "*",
+              "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
+              "Content-Type": "application/json; charset=utf-8",
+              "Content-Length": 29,
+              "ETag": "W/\"1d-dosDbWj4EtH/AaUs9QllSYi7UFw\"",
+              "Date": "Tue, 03 Mar 2020 20:14:39 GMT",
+              "Connection": "keep-alive"
+            },
+            "body": "{\"cas\":\"1583266479037218816\"}",
+            "_mode": "text"
+          }
+        }
+      ]
+    }
+  ]
+}

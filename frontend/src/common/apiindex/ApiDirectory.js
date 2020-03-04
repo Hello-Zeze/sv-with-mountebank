@@ -7,7 +7,6 @@ class ApiDirectory {
             baseUrl: undefined,
             ordersSvc: undefined,
             productsSvc: undefined,
-            recommendationsSvc: undefined,
             shoppingCartSvc: undefined
         };
         
@@ -22,7 +21,6 @@ class ApiDirectory {
         this.directory.baseUrl = getBaseUrl(process.env.REACT_APP_BASE_URL);
         this.directory.ordersSvc = getServiceConfig(process.env.REACT_APP_ORDERS_SERVICE);
         this.directory.productsSvc = getServiceConfig(process.env.REACT_APP_PRODUCTS_SERVICE);
-        this.directory.recommendationsSvc = getServiceConfig(process.env.REACT_APP_RECOMMENDATIONS_SERVICE);
         this.directory.shoppingCartSvc = getServiceConfig(process.env.REACT_APP_SHOPPING_CART_SERVICE);
     }
 

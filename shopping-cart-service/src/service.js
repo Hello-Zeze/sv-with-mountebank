@@ -10,7 +10,18 @@ class Service {
 
     addItem(item){
         item.id = uuid();
-        return this.dataAccess.add(item);
+        const request = this.dataAccess.add(item);
+        return new Promise((resolve,reject)=>{
+            request.then(result=>{
+                resolve(item);
+            }).catch(err=>{
+                reject(err);
+            });
+        });
+    }
+
+    deleteItem(itemId){
+        return this.dataAccess.removeById(itemId);
     }
 }
 

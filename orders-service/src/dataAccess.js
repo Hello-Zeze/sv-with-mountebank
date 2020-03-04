@@ -14,6 +14,10 @@ class DataAccess {
     getAll(){
         return this.couchbaseClient.getAll();
     }
+
+    removeById(id){
+        return this.couchbaseClient.removeById(id);
+    }
 }
 
 module.exports = DataAccess;

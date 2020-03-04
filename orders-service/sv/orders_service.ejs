@@ -1,0 +1,64 @@
+{
+  "protocol": "http",
+  "port": 3001,
+  "name": "OrdersServiceImposter_Proxy_with_PredicateHints",
+  "recordRequests": false,
+  "stubs": [
+    {
+      "predicates": [
+        {
+          "deepEquals": {
+            "method": "OPTIONS"
+          }
+        }
+      ],
+      "responses": [
+        {
+          "is": {
+            "statusCode": 200,
+            "headers": {
+              "X-Powered-By": "Express",
+              "Access-Control-Allow-Origin": "http://localhost:3000",
+              "Access-Control-Allow-Methods": "POST",
+              "Vary": "Access-Control-Request-Headers",
+              "Access-Control-Allow-Headers": "content-type",
+              "Content-Length": 0,
+              "Date": "Tue, 03 Mar 2020 20:14:38 GMT",
+              "Connection": "keep-alive"
+            },
+            "body": "",
+            "_mode": "text"
+          }
+        }
+      ]
+    },
+    {
+      "predicates": [
+        {
+          "deepEquals": {
+            "method": "POST"
+          }
+        }
+      ],
+      "responses": [
+        {
+          "is": {
+            "statusCode": 200,
+            "headers": {
+              "X-Powered-By": "Express",
+              "Access-Control-Allow-Origin": "*",
+              "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
+              "Content-Type": "application/json; charset=utf-8",
+              "Content-Length": 138,
+              "ETag": "W/\"8a-mMnAljzo87H/TGsxsBwF2lUeB0M\"",
+              "Date": "Tue, 03 Mar 2020 20:14:38 GMT",
+              "Connection": "keep-alive"
+            },
+            "body": "{\"productId\":\"51de6070-f587-447e-a9c0-8d7c5b96e7d8\",\"price\":\"R18.00\",\"status\":\"Ready for Shipping\",\"id\":\"55475ce8-cda6-4836-9baf-0d8d5b7f3c56\"}",
+            "_mode": "text"
+          }
+        }
+      ]
+    }
+  ]
+}

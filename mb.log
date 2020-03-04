@@ -1,106 +1,13 @@
-{"message":"[mb:2525] mountebank v2.0.0 now taking orders - point your browser to http://localhost:2525/ for help","level":"info","timestamp":"2020-02-28T11:44:37.944Z"}
-{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-28T11:44:55.698Z"}
-{"message":"[mb:2525] POST /imposters","level":"info","timestamp":"2020-02-28T11:45:38.371Z"}
-{"message":"[mb:2525] error creating imposter: {\"code\":\"resource conflict\",\"message\":\"Port 3002 is already in use\",\"name\":\"Error\",\"stack\":\"Error\\n    at Object.from (/home/ze/.nvm/versions/node/v8.12.0/lib/node_modules/mountebank/src/util/inherit.js:15:17)\\n    at createError (/home/ze/.nvm/versions/node/v8.12.0/lib/node_modules/mountebank/src/util/errors.js:10:26)\\n    at Object.ResourceConflictError (/home/ze/.nvm/versions/node/v8.12.0/lib/node_modules/mountebank/src/util/errors.js:21:34)\\n    at Domain.error (/home/ze/.nvm/versions/node/v8.12.0/lib/node_modules/mountebank/src/models/imposter.js:16:36)\\n    at emitOne (events.js:116:13)\\n    at Domain.emit (events.js:211:7)\\n    at Server.emit (events.js:181:14)\\n    at emitErrorNT (net.js:1380:8)\\n    at _combinedTickCallback (internal/process/next_tick.js:139:11)\\n    at process._tickCallback (internal/process/next_tick.js:181:9)\"}","level":"error","timestamp":"2020-02-28T11:45:38.393Z"}
-{"message":"[mb:2525] POST /imposters","level":"info","timestamp":"2020-02-28T11:46:26.419Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] Open for business...","level":"info","timestamp":"2020-02-28T11:46:26.425Z"}
-{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-28T11:46:30.512Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:33260 => GET /product","level":"info","timestamp":"2020-02-28T11:46:46.672Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:34012 => OPTIONS /product","level":"info","timestamp":"2020-02-28T11:47:03.233Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:52922 => OPTIONS /product","level":"info","timestamp":"2020-02-28T12:16:17.668Z"}
-{"message":"[mb:2525] DELETE /imposters/3002","level":"info","timestamp":"2020-02-28T12:20:59.428Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] Ciao for now","level":"info","timestamp":"2020-02-28T12:20:59.429Z"}
-{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-28T12:21:04.618Z"}
-{"message":"[mb:2525] POST /imposters","level":"info","timestamp":"2020-02-28T12:22:22.715Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] Open for business...","level":"info","timestamp":"2020-02-28T12:22:22.718Z"}
-{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-28T12:22:26.270Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:44596 => OPTIONS /product","level":"info","timestamp":"2020-02-28T12:22:40.086Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:44600 => GET /product","level":"info","timestamp":"2020-02-28T12:22:40.112Z"}
-{"message":"[mb:2525] DELETE /imposters/3002","level":"info","timestamp":"2020-02-28T12:26:02.914Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] Ciao for now","level":"info","timestamp":"2020-02-28T12:26:02.915Z"}
-{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-28T12:26:07.274Z"}
-{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-28T12:27:15.228Z"}
-{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-28T12:30:25.413Z"}
-{"message":"[mb:2525] DELETE /imposters/3002","level":"info","timestamp":"2020-02-28T12:32:07.415Z"}
-{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-28T12:32:11.035Z"}
-{"message":"[mb:2525] POST /imposters","level":"info","timestamp":"2020-02-28T12:32:16.252Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] Open for business...","level":"info","timestamp":"2020-02-28T12:32:16.258Z"}
-{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-28T12:32:20.561Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:46634 => GET /product","level":"info","timestamp":"2020-02-28T12:32:23.230Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:46876 => GET /product","level":"info","timestamp":"2020-02-28T12:32:27.797Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:46932 => GET /product","level":"info","timestamp":"2020-02-28T12:32:28.846Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:47688 => OPTIONS /product","level":"info","timestamp":"2020-02-28T12:32:43.135Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:47690 => GET /product","level":"info","timestamp":"2020-02-28T12:32:43.196Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:48938 => OPTIONS /product","level":"info","timestamp":"2020-02-28T12:33:07.058Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:48944 => GET /product","level":"info","timestamp":"2020-02-28T12:33:07.087Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:51220 => OPTIONS /product","level":"info","timestamp":"2020-02-28T12:33:50.692Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:51222 => GET /product","level":"info","timestamp":"2020-02-28T12:33:50.719Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:51768 => OPTIONS /product","level":"info","timestamp":"2020-02-28T12:34:00.727Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:51780 => GET /product","level":"info","timestamp":"2020-02-28T12:34:00.771Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:55656 => GET /product","level":"info","timestamp":"2020-02-28T12:35:15.355Z"}
-{"message":"[mb:2525] DELETE /imposters/3002","level":"info","timestamp":"2020-02-28T12:39:15.931Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] Ciao for now","level":"info","timestamp":"2020-02-28T12:39:15.931Z"}
-{"message":"[mb:2525] POST /imposters","level":"info","timestamp":"2020-02-28T12:41:13.895Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] Open for business...","level":"info","timestamp":"2020-02-28T12:41:13.900Z"}
-{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-28T12:41:17.337Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:46566 => GET /product","level":"info","timestamp":"2020-02-28T12:41:25.219Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:46996 => OPTIONS /product","level":"info","timestamp":"2020-02-28T12:41:33.227Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:46998 => GET /product","level":"info","timestamp":"2020-02-28T12:41:33.258Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:47412 => OPTIONS /product","level":"info","timestamp":"2020-02-28T12:41:40.664Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:47414 => GET /product","level":"info","timestamp":"2020-02-28T12:41:40.691Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:50800 => OPTIONS /product","level":"info","timestamp":"2020-02-28T12:42:47.721Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:50802 => GET /product","level":"info","timestamp":"2020-02-28T12:42:47.753Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:51520 => OPTIONS /product","level":"info","timestamp":"2020-02-28T12:43:02.476Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:51524 => GET /product","level":"info","timestamp":"2020-02-28T12:43:02.511Z"}
-{"message":"[mb:2525] DELETE /imposters/3002","level":"info","timestamp":"2020-02-28T12:46:55.946Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] Ciao for now","level":"info","timestamp":"2020-02-28T12:46:55.947Z"}
-{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-28T12:53:44.940Z"}
-{"message":"[mb:2525] POST /imposters","level":"info","timestamp":"2020-02-28T12:54:07.246Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] Open for business...","level":"info","timestamp":"2020-02-28T12:54:07.252Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:57934 => GET /product","level":"info","timestamp":"2020-02-28T12:54:12.020Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:58258 => OPTIONS /product","level":"info","timestamp":"2020-02-28T12:54:17.871Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:58260 => GET /product","level":"info","timestamp":"2020-02-28T12:54:17.905Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:59714 => OPTIONS /product","level":"info","timestamp":"2020-02-28T12:54:47.904Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:59716 => GET /product","level":"info","timestamp":"2020-02-28T12:54:47.932Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:60160 => OPTIONS /product","level":"info","timestamp":"2020-02-28T12:54:55.539Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:60162 => GET /product","level":"info","timestamp":"2020-02-28T12:54:55.558Z"}
-{"message":"[mb:2525] DELETE /imposters/3002","level":"info","timestamp":"2020-02-28T12:57:09.532Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] Ciao for now","level":"info","timestamp":"2020-02-28T12:57:09.532Z"}
-{"message":"[mb:2525] POST /imposters","level":"info","timestamp":"2020-02-28T12:57:44.695Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] Open for business...","level":"info","timestamp":"2020-02-28T12:57:44.700Z"}
-{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-28T12:57:49.135Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:41046 => GET /product","level":"info","timestamp":"2020-02-28T12:57:51.804Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:41318 => OPTIONS /product","level":"info","timestamp":"2020-02-28T12:57:56.992Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:41320 => GET /product","level":"info","timestamp":"2020-02-28T12:57:57.007Z"}
-{"message":"[mb:2525] DELETE /imposters/3002","level":"info","timestamp":"2020-02-28T12:58:55.633Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] Ciao for now","level":"info","timestamp":"2020-02-28T12:58:55.635Z"}
-{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-28T12:58:58.330Z"}
-{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-28T13:05:24.492Z"}
-{"message":"[mb:2525] POST /imposters","level":"info","timestamp":"2020-02-28T13:05:29.713Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] Open for business...","level":"info","timestamp":"2020-02-28T13:05:29.719Z"}
-{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-28T13:05:32.792Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:36910 => GET /product","level":"info","timestamp":"2020-02-28T13:05:36.907Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:37182 => OPTIONS /product","level":"info","timestamp":"2020-02-28T13:05:41.938Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:37184 => GET /product","level":"info","timestamp":"2020-02-28T13:05:41.950Z"}
-{"message":"[mb:2525] DELETE /imposters/3002","level":"info","timestamp":"2020-02-28T13:12:00.356Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] Ciao for now","level":"info","timestamp":"2020-02-28T13:12:00.356Z"}
-{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-28T13:12:03.382Z"}
-{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-28T13:12:14.411Z"}
-{"message":"[mb:2525] POST /imposters","level":"info","timestamp":"2020-02-28T13:12:28.317Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] Open for business...","level":"info","timestamp":"2020-02-28T13:12:28.320Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:58584 => GET /product","level":"info","timestamp":"2020-02-28T13:12:32.158Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:34896 => OPTIONS /product","level":"info","timestamp":"2020-02-28T13:13:59.313Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:34898 => GET /product","level":"info","timestamp":"2020-02-28T13:13:59.328Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:35738 => OPTIONS /product","level":"info","timestamp":"2020-02-28T13:14:15.319Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:35740 => GET /product","level":"info","timestamp":"2020-02-28T13:14:15.341Z"}
-{"message":"[mb:2525] DELETE /imposters/3002","level":"info","timestamp":"2020-02-28T13:15:37.475Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] Ciao for now","level":"info","timestamp":"2020-02-28T13:15:37.478Z"}
-{"message":"[mb:2525] POST /imposters","level":"info","timestamp":"2020-02-28T13:16:02.831Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] Open for business...","level":"info","timestamp":"2020-02-28T13:16:02.835Z"}
-{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-28T13:16:06.708Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:41686 => GET /product","level":"info","timestamp":"2020-02-28T13:16:09.639Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:42484 => OPTIONS /product","level":"info","timestamp":"2020-02-28T13:16:24.769Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] ::1:42486 => GET /product","level":"info","timestamp":"2020-02-28T13:16:24.783Z"}
-{"message":"[mb:2525] DELETE /imposters/3002","level":"info","timestamp":"2020-02-28T13:19:10.725Z"}
-{"message":"[http:3002 ProductsServiceImposter_M] Ciao for now","level":"info","timestamp":"2020-02-28T13:19:10.726Z"}
-{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-02-28T13:19:13.263Z"}
+{"message":"[mb:2525] mountebank v2.0.0 now taking orders - point your browser to http://localhost:2525/ for help","level":"info","timestamp":"2020-03-03T20:43:03.637Z"}
+{"message":"[mb:2525] PUT /imposters","level":"info","timestamp":"2020-03-03T20:43:03.662Z"}
+{"message":"[http:3002 ProductsServiceImposter_Proxy_with_PredicateHints] Open for business...","level":"info","timestamp":"2020-03-03T20:43:03.687Z"}
+{"message":"[http:3001 OrdersServiceImposter_Proxy_with_PredicateHints] Open for business...","level":"info","timestamp":"2020-03-03T20:43:03.688Z"}
+{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] Open for business...","level":"info","timestamp":"2020-03-03T20:43:03.688Z"}
+{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] ::1:52560 => OPTIONS /shopping-cart","level":"info","timestamp":"2020-03-03T20:43:09.400Z"}
+{"message":"[http:3002 ProductsServiceImposter_Proxy_with_PredicateHints] ::1:45370 => OPTIONS /product","level":"info","timestamp":"2020-03-03T20:43:09.412Z"}
+{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] ::1:52560 => GET /shopping-cart","level":"info","timestamp":"2020-03-03T20:43:09.432Z"}
+{"message":"[http:3002 ProductsServiceImposter_Proxy_with_PredicateHints] ::1:45370 => GET /product","level":"info","timestamp":"2020-03-03T20:43:09.450Z"}
+{"message":"[http:3001 OrdersServiceImposter_Proxy_with_PredicateHints] ::1:57430 => OPTIONS /order","level":"info","timestamp":"2020-03-03T20:43:11.811Z"}
+{"message":"[http:3001 OrdersServiceImposter_Proxy_with_PredicateHints] ::1:57430 => POST /order","level":"info","timestamp":"2020-03-03T20:43:11.826Z"}
+{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] ::1:52560 => POST /shopping-cart","level":"info","timestamp":"2020-03-03T20:43:11.841Z"}
+{"message":"[mb:2525] Adios - see you soon?","level":"info","timestamp":"2020-03-04T08:00:11.983Z"}

@@ -13,7 +13,8 @@ export default class OrderDetails extends Component {
         Price: PropTypes.string.isRequired,
         OrderId: PropTypes.string,
         OrderStatus: PropTypes.string,
-        OnClose: PropTypes.func.isRequired
+        OnClose: PropTypes.func.isRequired,
+        OnCancelOrder: PropTypes.func.isRequired
     }
 
     render(){
@@ -60,6 +61,9 @@ export default class OrderDetails extends Component {
                             />
                         </DialogContent>
                         <DialogActions>
+                        <Button onClick={this.props.OnClose} color="primary">
+                                Cancel Order
+                            </Button>
                             <Button onClick={this.props.OnClose} color="primary">
                                 Dismiss
                             </Button>
