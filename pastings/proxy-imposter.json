@@ -1,0 +1,19 @@
+{
+	"port": 30020,
+	"protocol": "http",
+	"name": "ProductService_Imposter",
+	"allowCORS": true,
+	"stubs":[{
+		"responses":[{
+			"proxy": {
+				"to": "http://localhost:3002/product",
+				"predicateGenerators": [{
+					"matches": {
+						"method": true
+					}
+				}],
+				"mode": "proxyOnce"
+			}
+		}]
+	}]
+}

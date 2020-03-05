@@ -1,0 +1,28 @@
+{
+	"port": 3002,
+	"protocol": "http",
+	"name": "MyService_Imposter",	
+	"stubs": [
+		{
+			"responses":[
+				{
+					"is": {
+						"statusCode": 200,
+						"headers": {
+							"Content-Type": "application/json"
+						},
+						"body": [
+					    	{
+						        "title": "Fake News Trump Rubber Duck",
+						        "desc": "I'm the best duck ever. Made in Nambia. #covfefe",
+						        "price": "R10.00",
+						        "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTal74Eb2h--4IFPwlmxFzAMyzBxB9W11gisPU3dZNpr8oYYRzx",
+						        "id": "50ca1de0-5a46-470a-9b4f-7ecdde3bb4cb"
+						    }
+						]
+					}
+				}
+			]
+		}
+	]
+}

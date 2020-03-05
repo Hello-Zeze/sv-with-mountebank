@@ -1,18 +1,13 @@
-{"message":"[mb:2525] mountebank v2.0.0 now taking orders - point your browser to http://localhost:2525/ for help","level":"info","timestamp":"2020-03-03T20:40:53.471Z"}
-{"message":"[mb:2525] PUT /imposters","level":"info","timestamp":"2020-03-03T20:40:53.497Z"}
-{"message":"[http:3002 ProductsServiceImposter_Proxy_with_PredicateHints] Open for business...","level":"info","timestamp":"2020-03-03T20:40:53.523Z"}
-{"message":"[http:3001 OrdersServiceImposter_Proxy_with_PredicateHints] Open for business...","level":"info","timestamp":"2020-03-03T20:40:53.524Z"}
-{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] Open for business...","level":"info","timestamp":"2020-03-03T20:40:53.524Z"}
-{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] ::1:48818 => OPTIONS /shopping-cart","level":"info","timestamp":"2020-03-03T20:41:45.954Z"}
-{"message":"[http:3002 ProductsServiceImposter_Proxy_with_PredicateHints] ::1:41628 => OPTIONS /product","level":"info","timestamp":"2020-03-03T20:41:45.964Z"}
-{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] ::1:48818 => GET /shopping-cart","level":"info","timestamp":"2020-03-03T20:41:45.999Z"}
-{"message":"[http:3002 ProductsServiceImposter_Proxy_with_PredicateHints] ::1:41628 => GET /product","level":"info","timestamp":"2020-03-03T20:41:46.010Z"}
-{"message":"[http:3001 OrdersServiceImposter_Proxy_with_PredicateHints] ::1:53886 => OPTIONS /order","level":"info","timestamp":"2020-03-03T20:41:52.993Z"}
-{"message":"[http:3001 OrdersServiceImposter_Proxy_with_PredicateHints] ::1:53886 => POST /order","level":"info","timestamp":"2020-03-03T20:41:52.998Z"}
-{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] ::1:49152 => OPTIONS /shopping-cart","level":"info","timestamp":"2020-03-03T20:41:53.008Z"}
-{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] ::1:49152 => POST /shopping-cart","level":"info","timestamp":"2020-03-03T20:41:53.014Z"}
-{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] ::1:50120 => OPTIONS /shopping-cart","level":"info","timestamp":"2020-03-03T20:42:14.693Z"}
-{"message":"[http:3002 ProductsServiceImposter_Proxy_with_PredicateHints] ::1:42930 => OPTIONS /product","level":"info","timestamp":"2020-03-03T20:42:14.699Z"}
-{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] ::1:50120 => GET /shopping-cart","level":"info","timestamp":"2020-03-03T20:42:14.725Z"}
-{"message":"[http:3002 ProductsServiceImposter_Proxy_with_PredicateHints] ::1:42930 => GET /product","level":"info","timestamp":"2020-03-03T20:42:14.757Z"}
-{"message":"[mb:2525] Adios - see you soon?","level":"info","timestamp":"2020-03-03T20:42:22.885Z"}
+{"message":"[mb:2525] mountebank v2.0.0 now taking orders - point your browser to http://localhost:2525/ for help","level":"info","timestamp":"2020-03-03T20:43:03.637Z"}
+{"message":"[mb:2525] PUT /imposters","level":"info","timestamp":"2020-03-03T20:43:03.662Z"}
+{"message":"[http:3002 ProductsServiceImposter_Proxy_with_PredicateHints] Open for business...","level":"info","timestamp":"2020-03-03T20:43:03.687Z"}
+{"message":"[http:3001 OrdersServiceImposter_Proxy_with_PredicateHints] Open for business...","level":"info","timestamp":"2020-03-03T20:43:03.688Z"}
+{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] Open for business...","level":"info","timestamp":"2020-03-03T20:43:03.688Z"}
+{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] ::1:52560 => OPTIONS /shopping-cart","level":"info","timestamp":"2020-03-03T20:43:09.400Z"}
+{"message":"[http:3002 ProductsServiceImposter_Proxy_with_PredicateHints] ::1:45370 => OPTIONS /product","level":"info","timestamp":"2020-03-03T20:43:09.412Z"}
+{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] ::1:52560 => GET /shopping-cart","level":"info","timestamp":"2020-03-03T20:43:09.432Z"}
+{"message":"[http:3002 ProductsServiceImposter_Proxy_with_PredicateHints] ::1:45370 => GET /product","level":"info","timestamp":"2020-03-03T20:43:09.450Z"}
+{"message":"[http:3001 OrdersServiceImposter_Proxy_with_PredicateHints] ::1:57430 => OPTIONS /order","level":"info","timestamp":"2020-03-03T20:43:11.811Z"}
+{"message":"[http:3001 OrdersServiceImposter_Proxy_with_PredicateHints] ::1:57430 => POST /order","level":"info","timestamp":"2020-03-03T20:43:11.826Z"}
+{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] ::1:52560 => POST /shopping-cart","level":"info","timestamp":"2020-03-03T20:43:11.841Z"}
+{"message":"[mb:2525] Adios - see you soon?","level":"info","timestamp":"2020-03-04T08:00:11.983Z"}

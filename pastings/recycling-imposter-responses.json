@@ -1,0 +1,104 @@
+{
+	"port": 3232,
+	"protocol": "http",
+	"name": "MyInventoryService_Imposter",	
+	"stubs": [
+		{
+            "predicates": [{
+				"equals": { "path": "/inventory/6b7ee2d9-f7c0-4fb8-a913-8eccbf87bf9a" }
+			}],
+			"responses":[
+				{
+					"is": {
+						"statusCode": 200,
+						"headers": {
+							"Content-Type": "application/json"
+						},
+						"body": {
+                            "title": "Example Product A",
+                            "count": 100,
+                            "status": "fully stocked",
+                            "id": "6b7ee2d9-f7c0-4fb8-a913-8eccbf87bf9a"
+                        }
+					}
+                },
+                {
+					"is": {
+						"statusCode": 200,
+						"headers": {
+							"Content-Type": "application/json"
+						},
+						"body": {
+                            "title": "Example Product A",
+                            "count": 50,			
+                            "status": "in stock",			        
+                            "id": "6b7ee2d9-f7c0-4fb8-a913-8eccbf87bf9a"
+                        }
+					}
+                },
+                {
+					"is": {
+						"statusCode": 200,
+						"headers": {
+							"Content-Type": "application/json"
+						},
+						"body": {
+                            "title": "Example Product A",
+                            "count": 0,
+                            "status": "out of stock",
+                            "id": "6b7ee2d9-f7c0-4fb8-a913-8eccbf87bf9a"
+                        }
+					}
+				}
+			]
+        },
+        {
+            "predicates": [{
+				"equals": { "path": "/inventory/25d7382f-89bd-4479-85f4-2ddce93a5e03" }
+			}],
+			"responses":[
+				{
+					"is": {
+						"statusCode": 200,
+						"headers": {
+							"Content-Type": "application/json"
+						},
+						"body": {
+                            "title": "Example Product B",
+                            "count": 0,
+                            "status": "out of stock",
+                            "id": "25d7382f-89bd-4479-85f4-2ddce93a5e03"
+                        }
+					}
+                },
+                {
+					"is": {
+						"statusCode": 200,
+						"headers": {
+							"Content-Type": "application/json"
+						},
+						"body": {
+                            "title": "Example Product B",
+                            "count": 100,			
+                            "status": "fully stocked",			        
+                            "id": "25d7382f-89bd-4479-85f4-2ddce93a5e03"
+                        }
+					}
+                }
+			]
+        },
+        {
+			"responses":[
+				{
+					"is": {
+						"statusCode": 404,
+						"headers": {
+							"Content-Type": "plain/text"
+						},
+						"body": "Invalid Product Id. Product Not Found."
+					}
+                }
+			]
+		}
+	]
+}

@@ -1,13 +1,30 @@
-{"message":"[mb:2525] mountebank v2.0.0 now taking orders - point your browser to http://localhost:2525/ for help","level":"info","timestamp":"2020-03-03T20:43:03.637Z"}
-{"message":"[mb:2525] PUT /imposters","level":"info","timestamp":"2020-03-03T20:43:03.662Z"}
-{"message":"[http:3002 ProductsServiceImposter_Proxy_with_PredicateHints] Open for business...","level":"info","timestamp":"2020-03-03T20:43:03.687Z"}
-{"message":"[http:3001 OrdersServiceImposter_Proxy_with_PredicateHints] Open for business...","level":"info","timestamp":"2020-03-03T20:43:03.688Z"}
-{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] Open for business...","level":"info","timestamp":"2020-03-03T20:43:03.688Z"}
-{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] ::1:52560 => OPTIONS /shopping-cart","level":"info","timestamp":"2020-03-03T20:43:09.400Z"}
-{"message":"[http:3002 ProductsServiceImposter_Proxy_with_PredicateHints] ::1:45370 => OPTIONS /product","level":"info","timestamp":"2020-03-03T20:43:09.412Z"}
-{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] ::1:52560 => GET /shopping-cart","level":"info","timestamp":"2020-03-03T20:43:09.432Z"}
-{"message":"[http:3002 ProductsServiceImposter_Proxy_with_PredicateHints] ::1:45370 => GET /product","level":"info","timestamp":"2020-03-03T20:43:09.450Z"}
-{"message":"[http:3001 OrdersServiceImposter_Proxy_with_PredicateHints] ::1:57430 => OPTIONS /order","level":"info","timestamp":"2020-03-03T20:43:11.811Z"}
-{"message":"[http:3001 OrdersServiceImposter_Proxy_with_PredicateHints] ::1:57430 => POST /order","level":"info","timestamp":"2020-03-03T20:43:11.826Z"}
-{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] ::1:52560 => POST /shopping-cart","level":"info","timestamp":"2020-03-03T20:43:11.841Z"}
-{"message":"[mb:2525] Adios - see you soon?","level":"info","timestamp":"2020-03-04T08:00:11.983Z"}
+{"message":"[mb:2525] mountebank v2.0.0 now taking orders - point your browser to http://localhost:2525/ for help","level":"info","timestamp":"2020-03-05T20:58:55.835Z"}
+{"message":"[mb:2525] PUT /imposters","level":"info","timestamp":"2020-03-05T20:58:55.872Z"}
+{"message":"[http:3002 ProductsServiceImposter_Proxy_with_PredicateHints] Open for business...","level":"info","timestamp":"2020-03-05T20:58:55.906Z"}
+{"message":"[http:3001 OrdersServiceImposter_Proxy_with_PredicateHints] Open for business...","level":"info","timestamp":"2020-03-05T20:58:55.907Z"}
+{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] Open for business...","level":"info","timestamp":"2020-03-05T20:58:55.908Z"}
+{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] ::1:46914 => OPTIONS /shopping-cart","level":"info","timestamp":"2020-03-05T21:00:11.646Z"}
+{"message":"[http:3002 ProductsServiceImposter_Proxy_with_PredicateHints] ::1:59006 => OPTIONS /product","level":"info","timestamp":"2020-03-05T21:00:11.662Z"}
+{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] ::1:46914 => GET /shopping-cart","level":"info","timestamp":"2020-03-05T21:00:11.742Z"}
+{"message":"[http:3002 ProductsServiceImposter_Proxy_with_PredicateHints] ::1:59006 => GET /product","level":"info","timestamp":"2020-03-05T21:00:11.757Z"}
+{"message":"[http:3001 OrdersServiceImposter_Proxy_with_PredicateHints] ::1:45160 => OPTIONS /order","level":"info","timestamp":"2020-03-05T21:00:27.544Z"}
+{"message":"[http:3001 OrdersServiceImposter_Proxy_with_PredicateHints] ::1:45160 => POST /order","level":"info","timestamp":"2020-03-05T21:00:27.555Z"}
+{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] ::1:47696 => OPTIONS /shopping-cart","level":"info","timestamp":"2020-03-05T21:00:27.574Z"}
+{"message":"[http:3004 ShoppingCartServiceImposter_Proxy_with_PredicateHints] ::1:47696 => POST /shopping-cart","level":"info","timestamp":"2020-03-05T21:00:27.584Z"}
+{"message":"[mb:2525] POST /imposters","level":"info","timestamp":"2020-03-05T21:18:30.078Z"}
+{"message":"[http:3232 MyInventoryService_Imposter] Open for business...","level":"info","timestamp":"2020-03-05T21:18:30.089Z"}
+{"message":"[http:3232 MyInventoryService_Imposter] ::1:36952 => GET /inventory/6b7ee2d9-f7c0-4fb8-a913-8eccbf87bf9a","level":"info","timestamp":"2020-03-05T21:18:52.047Z"}
+{"message":"[http:3232 MyInventoryService_Imposter] ::1:37350 => GET /inventory/6b7ee2d9-f7c0-4fb8-a913-8eccbf87bf9a","level":"info","timestamp":"2020-03-05T21:18:59.649Z"}
+{"message":"[http:3232 MyInventoryService_Imposter] ::1:37422 => GET /inventory/6b7ee2d9-f7c0-4fb8-a913-8eccbf87bf9a","level":"info","timestamp":"2020-03-05T21:19:01.092Z"}
+{"message":"[http:3232 MyInventoryService_Imposter] ::1:37544 => GET /inventory/6b7ee2d9-f7c0-4fb8-a913-8eccbf87bf9a","level":"info","timestamp":"2020-03-05T21:19:03.383Z"}
+{"message":"[http:3232 MyInventoryService_Imposter] ::1:37624 => GET /inventory/6b7ee2d9-f7c0-4fb8-a913-8eccbf87bf9a","level":"info","timestamp":"2020-03-05T21:19:04.735Z"}
+{"message":"[http:3232 MyInventoryService_Imposter] ::1:37694 => GET /inventory/6b7ee2d9-f7c0-4fb8-a913-8eccbf87bf9a","level":"info","timestamp":"2020-03-05T21:19:05.922Z"}
+{"message":"[http:3232 MyInventoryService_Imposter] ::1:37734 => GET /inventory/6b7ee2d9-f7c0-4fb8-a913-8eccbf87bf9a","level":"info","timestamp":"2020-03-05T21:19:06.748Z"}
+{"message":"[http:3232 MyInventoryService_Imposter] ::1:38116 => GET /inventory/6b7ee2d9-f7c0-4fb8-a913-8eccbf87bf96","level":"info","timestamp":"2020-03-05T21:19:14.060Z"}
+{"message":"[http:3232 MyInventoryService_Imposter] ::1:38970 => GET /inventory/25d7382f-89bd-4479-85f4-2ddce93a5e03","level":"info","timestamp":"2020-03-05T21:19:30.025Z"}
+{"message":"[http:3232 MyInventoryService_Imposter] ::1:39086 => GET /inventory/25d7382f-89bd-4479-85f4-2ddce93a5e03","level":"info","timestamp":"2020-03-05T21:19:32.336Z"}
+{"message":"[http:3232 MyInventoryService_Imposter] ::1:39182 => GET /inventory/25d7382f-89bd-4479-85f4-2ddce93a5e03","level":"info","timestamp":"2020-03-05T21:19:33.936Z"}
+{"message":"[http:3232 MyInventoryService_Imposter] ::1:39250 => GET /inventory/25d7382f-89bd-4479-85f4-2ddce93a5e03","level":"info","timestamp":"2020-03-05T21:19:35.315Z"}
+{"message":"[mb:2525] GET /imposters/30020","level":"info","timestamp":"2020-03-05T21:42:46.784Z"}
+{"message":"[mb:2525] GET /imposters","level":"info","timestamp":"2020-03-05T21:42:54.459Z"}
+{"message":"[mb:2525] Adios - see you soon?","level":"info","timestamp":"2020-03-05T21:54:58.544Z"}
