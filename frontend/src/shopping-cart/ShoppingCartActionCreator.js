@@ -31,4 +31,18 @@ export default class ShoppingCartActionCreator {
             });
         });
     }
+
+    static removeItemFromShoppingCart(itemId){
+        ShoppingCartWebservice.deleteShoppingCartItem(itemId).then(result=>{
+            Dispatcher.dispatch({
+                type: ShoppingCartActionTypes.SHOPPING_CART_REMOVE_ITEM_SUCCESS,
+                payload: {itemId}
+            });
+        }).catch(err=>{
+            Dispatcher.dispatch({
+                type: ShoppingCartActionTypes.SHOPPING_CART_REMOVE_ITEM_FAIL,
+                payload: err
+            });
+        });
+    }
 }

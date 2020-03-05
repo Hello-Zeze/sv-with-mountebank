@@ -31,6 +31,14 @@ class OrdersWebservice {
         };
         return this._webservice.execute(payload);
     }
+
+    deleteOrder(orderId){
+        const payload = {
+            url:`${this.ordersSvc}/${orderId}`,
+            method: 'DELETE'
+        };
+        return this._webservice.execute(payload);
+    }
 }
 
 export default new OrdersWebservice();

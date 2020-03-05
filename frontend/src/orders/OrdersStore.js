@@ -30,6 +30,12 @@ class OrdersStore extends BaseStore{
             case OrdersActionTypes.ORDER_DATA_LOAD_FAIL:
                 this.handleOrderDataLoadFail(action);
                 break;
+            case OrdersActionTypes.ORDER_DELETE_SUCCESS:
+                this.handleOrderDeleteSuccess(action);
+                break;
+            case OrdersActionTypes.ORDER_DELETE_FAIL:
+                this.handleOrderDeleteFail(action);
+                break;
             default:
                 break;
         }
@@ -65,6 +71,19 @@ class OrdersStore extends BaseStore{
 
     handleOrderDataLoadFail(action){
         this.emit(OrdersActionTypes.ORDER_DATA_LOAD_FAIL, action.payload);
+    }
+
+    handleOrderDeleteSuccess(action){
+        this.state.orders = this.state.orders.map(order=>{
+            if(order.id !== action.payload.orderId){
+                return order;
+            }
+        });
+        this.emit(OrdersActionTypes.ORDER_DELETE_SUCCESS, this.state.orders);
+    }
+    
+    handleOrderDeleteFail(action){  
+        this.emit(OrdersActionTypes.ORDER_DELETE_FAIL, action.payload);
     }
 }
 

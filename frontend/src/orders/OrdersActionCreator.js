@@ -45,4 +45,18 @@ export default class OrdersActionCreator {
             });
         });
     }
+
+    static deleteOrder(orderId){
+        OrdersWebservice.deleteOrder(orderId).then(result=>{
+            Dispatcher.dispatch({
+                type: OrdersActionTypes.ORDER_DELETE_SUCCESS,
+                payload: {orderId}
+            });
+        }).catch(err=>{
+            Dispatcher.dispatch({
+                type: OrdersActionTypes.ORDER_DELETE_FAIL,
+                payload: err
+            });
+        });
+    }
 }

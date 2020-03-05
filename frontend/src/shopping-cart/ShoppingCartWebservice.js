@@ -23,6 +23,14 @@ class ShoppingCartWebservice {
         };
         return this._webservice.execute(payload);
     }
+
+    deleteShoppingCartItem(itemId){
+        const payload = {
+            url:`${this.shoppingCartSvc}/${itemId}`,
+            method: 'DELETE'
+        };
+        return this._webservice.execute(payload);
+    }
 }
 
 export default new ShoppingCartWebservice();

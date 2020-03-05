@@ -24,6 +24,12 @@ class ShoppingCartStore extends BaseStore{
             case ShoppingCartActionTypes.SHOPPING_CART_ADD_ITEM_FAIL:
                 this.handleShoppingCartAddItemFail(action);
                 break;
+            case ShoppingCartActionTypes.SHOPPING_CART_REMOVE_ITEM_SUCCESS:
+                this.handleRemoveShoppingCartItemSuccess(action);
+                break;
+            case ShoppingCartActionTypes.SHOPPING_CART_REMOVE_ITEM_FAIL:
+                this.handleRemoveShoppingCartItemFail(action);
+                break;
             default:
                 break;
         }
@@ -45,6 +51,20 @@ class ShoppingCartStore extends BaseStore{
 
     handleShoppingCartAddItemFail(action){
         this.emit(ShoppingCartActionTypes.SHOPPING_CART_ADD_ITEM_FAIL, action.payload);
+    }
+
+    handleRemoveShoppingCartItemSuccess(action){
+        const items = this.state.cartItems.map(item=>{
+            if(item.id !== action.payload.itemId){
+                return item;
+            }
+        });
+        this.state.cartItems = items;
+        this.emit(ShoppingCartActionTypes.SHOPPING_CART_REMOVE_ITEM_SUCCESS, this.state.cartItems);
+    }
+
+    handleRemoveShoppingCartItemFail(action){
+        this.emit(ShoppingCartActionTypes.SHOPPING_CART_REMOVE_ITEM_FAIL, action.payload);
     }
 }
 
