@@ -1,7 +1,8 @@
 .product-item-container{
     width: 375px;
     height: auto;
-    position: relative;    
+    position: relative; 
+    margin-right: 10px;
 }
 
 .p-abs{
@@ -55,6 +56,7 @@
     font-weight: 700;
     line-height: 1.33;
     letter-spacing: 0em;
+    padding-left: 7px;
 }
 
 .product-desc{
