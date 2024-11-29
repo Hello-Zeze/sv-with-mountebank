@@ -27,7 +27,7 @@
     "rimraf": "2.6.2",
     "sass-material-colors": "0.0.5",
     "simplebar-react": "^1.1.0",
-    "superagent": "3.4.1",
+    "superagent": "5.0.2",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
